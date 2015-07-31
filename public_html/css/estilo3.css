@@ -1,0 +1,13 @@
+p{
+	background-color: #00CCFF;
+	/*padding es el espacio entre el contenido
+	y el borde del elemento*/
+	padding: 20px;
+	/*este width no incluye los padding, bordes, etc...*/
+	width: 600px;
+	/*también los bordes se pueden configurar solo usando "border"*/
+	border-style: dotted;
+	border-width: 5px;
+	border-color: #FF0000;
+	/**/
+}

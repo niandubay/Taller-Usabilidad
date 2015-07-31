@@ -1,0 +1,16 @@
+/* 
+    Created on : 22/07/2015, 10:10:29 AM
+    Author     : juanch0
+*/
+table, th, td {
+    border: solid 1px black;
+    min-width: 80px;
+    height: 30px;
+    text-align: center;
+}
+#span1 {
+    color: violet;
+}
+p{
+    background-color: #FF0099;
+}

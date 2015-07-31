@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+p {
+	font-weight: bold;
+	font-size: solid;
+	color: #9AD1E5;
+	font-style: italic;
+	/* las serif son las que tienene decoraciones en las
+	terminaciones de las fuentes*/
+	/*font-family: Arial, Verdana, sans-serif, serif;*/
+	/* esto se puede evitar usando google.fonts*/
+	font-family: 'Roboto', sans-serif;;
+	}

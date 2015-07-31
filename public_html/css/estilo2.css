@@ -1,0 +1,60 @@
+/*selectores de etiquetas*/
+body {
+    color: #00F;
+    font-size: 20px;
+}
+p {
+    color: #F00;
+}
+a {
+	color: orange;
+	text-decoration: none;
+}
+/*selector de clase*/
+.distinto {
+	font-size: 15px;
+}
+/*selector de id*/
+#elemento {
+	font-size: 25px;
+}
+/*p dentro de un elemento de id fulano*/
+#fulano p {
+	color: #1F1;
+}
+/*em hijo directo de un elemento de un p*/
+p>em {
+	color: #A11;
+}
+/*los p que tengan clase .algo*/
+p.algo {
+	background-color: #AAA
+}
+/*los enlaces no visitados que estén dentro de un div*/
+div a:link {
+	color: #036;
+	text-decoration: none;
+}
+/* todos los enlaces visitados*/
+a:visited {
+	color: #963;
+	text-decoration: none;
+}
+/* todos los a cuando les paso por arriba*/
+a:hover {
+	color: #369;
+	text-decoration: none;
+}
+/*todos los a cuando son cliqueados*/
+a:active {
+	color: #639;
+	text-decoration: none;
+}
+/*las primeras líneas de todos los párrafos*/
+p:fist-line{
+	background-color: #926
+}
+/*las primeras letras de todos los párrafos*/
+p:fist-letter{
+	background-color: #269
+}

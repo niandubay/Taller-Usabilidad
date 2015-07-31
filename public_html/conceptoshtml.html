@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TConceptos de html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--la etiqueta link permite vincular los archivos css y js...-->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+        <a href="anclaConScroll.html#pie">texto descriptivo, no sirve "haga click aquí"... pie en página 2</a>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <dl>
+            <dt>término 1</dt>
+            <dd>definicion del término 1</dd>
+            <dt>término 2</dt>
+            <dd>definicion del término 2</dd>
+            <dt>término 3</dt>
+            <dd>definicion del término 3</dd>
+        </dl>
+        <table>
+            <thead>
+                <tr>
+                    <th>Enc 1</th>
+                    <th>Enc 2</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Footer1</td>
+                    <td>Footer1b</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 1b</td>
+                </tr>
+                <tr>
+                    <td>Dato 2</td>
+                    <td>Dato 2b</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- rowspan es cuántas filas hacia abajo voy a ocupar...
+        colspan es cuantas columnas hacia la derecha voy a ocupar...-->
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nombre:</td>
+                    <td rowspan="2">Expansión en vertical</td>
+                </tr>
+                <tr>
+                    <td>Apellido:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Expansión Horizontal</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--p es un elemento de lìnea, igual que em para las cursivas o strong para las negritas...-->
+        <p>Esto es un <em>ejemplo de cursivas</em> dentro de un párrafo, unas <strong>negritas</strong> para resaltar 
+            y un <span id="span1"> span que puede tener una id</span>.</p>
+        <!--también son elementos de línea las etiquetas sub y pub que manejan indices superiores en inferiores en el texto...-->
+        <p>Aquí algunos <sup>ejemplos</sup> de <sub>indices</sub> de distinto orden.</p>
+        <!--las etiquetas ins y del sirven para marcar texto como borrado o insertado...-->
+        <p>El siguiente texto <ins>presenta ejemplos</ins> de las <del>etiquetas ins y del</del> para ver como quedan.</p>
+        <!--para generar una línea horizontal tenemos la etiqueta hr, ocupa todo el ancho disponible...-->
+        <hr>
+        <blockquote>Esto es para meter terrible párrafo en plan cita, es para citar un texto largo. Ni idea que usa 
+            el navegador para diferenciarlo de un párrafo normal.. así que ya lo veré en casa.</blockquote>
+        <p>Ahora voy a citar <q>algo dentro de un párrafo</q> normal a ver como queda para cosas cortas.</p>
+        <hr>
+        <label for="txtCampo">Nombre:</label>
+        <input type="text" id="txtCampo" placeholder="escriba su nombre aquí...">
+        <input type="button" value="Presionar">
+        <!--el boton de tipo submit es para lanzar el contenido del formulario a un--> 
+        <input type="submit" value="Presionar submit"><hr>
+        <!--el contenido del texto que va a tener el botón se define dentro de la etiqueta por
+        lo que podemos meter una imágen por ejemplo...-->
+        <button><strong>esto es un botón</strong></button><hr>
+        <!--input de tipo password...-->
+        <label for="password">Password:</label>
+        <input type="password" id="password"><hr>
+        <input type="file"><hr>
+        <!--los tipo radio se usan para cuando se tiene qeu seleccionar una cosa y no las otras...-->        
+        <input type="radio" id="hombre" name="genero" value="h">
+        <!--el label en los tipo radio va luego del input...-->
+        <label for="hombre">Hombre</label>
+        <!--los input tienen que tener el mismo name para que se mantenga el mecanismo de que cuando se
+        selecciona uno, se deselecciona el otro...-->
+        <input type="radio" id="mujer" name="genero" value="m">
+        <label for="hombre">Mujer</label><hr>
+        <!--los checkbox se pueden usar solos o como selecciones múltiples, deben compartir el mismo
+        name todos los elementos que se quieran enviar juntos a un servidor como array indexado...-->
+        <input type="checkbox" id="autos" name="hobbies" value="autos">
+        <label for="autos">Autos</label>
+        <input type="checkbox" id="motos" name="hobbies" value="motos">
+        <label for="autos">Motos</label><hr>
+        <!--el textarea es como un imput de tipo texto pero más grande...-->
+        <label for="areadetexto">Textarea:</label>
+        <textarea id="areadetexto">Puede tener un texto aquí dentro...</textarea><hr><br>
+        <!--la etiqueta select crea un desplegable con las opciones seleccionables...-->
+        <label for="desplegable">Desplegable:</label>
+        <select id="desplegable">
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+        </select><hr><br>
+        <!--metodos de envíos de formularios... el action es la ruta de destino (x.aspx o x.php) y 
+        el method es get/post, metodo visible o invisible para el usuario...-->
+        <form action="file.apsx" method="get">
+            <!--aquí estarían todos los inputs del formulario del que se quiere envíar la información...-->
+            <fieldset>
+                <!--estos fieldset organizan las partes de cada formulario...-->
+                <legend>Datos Personales:</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos:</legend>
+            </fieldset>
+        </form><hr>
+        <!--el input de tipo reset borra todos los contenidos de todos los elementos que sean parte
+        de ese formulario...-->
+        <input type="reset" value="Reset"><hr>
+        <!--ahora las etiquetas div, que son básicamente contenedores, igual que los nav, header, footer, aside, 
+        section y article...pero son semánticamente diferentes.-->
+        <div></div>
+    </body>
+</html>
